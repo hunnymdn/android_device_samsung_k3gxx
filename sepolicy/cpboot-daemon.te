@@ -1,3 +1,4 @@
+
 # modem daemon sec label
 type cpboot-daemon, domain;
 type cpboot-daemon_exec, exec_type, file_type;
@@ -46,3 +47,6 @@ allow cpboot-daemon radio_device:chr_file { read write ioctl open };
 
 # ril.cbd.boot_done
 allow cpboot-daemon radio_prop:property_service set;
+
+# /proc
+allow cpboot-daemon proc:file { open read getattr };
