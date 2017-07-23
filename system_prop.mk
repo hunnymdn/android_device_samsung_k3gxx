@@ -31,10 +31,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.secwvk=220 \
 	rild.libpath=/system/lib/libsec-ril.so \
     rild.libargs=-d /dev/ttyS0 \
-    ro.telephony.ril_class=SlteRIL \
+    ro.telephony.ril_class=Exynos542xRIL \
     ro.ril.telephony.mqanelements=5 \
     ro.telephony.default_network=0 \
-    telephony.lteOnCdmaDevice=0
+    telephony.lteOnCdmaDevice=0 \
+    ro.ril.samsung_nextgen_modem=0 \
+    ro.ril.needs_videocall_field=0
 
 ###########################################################
 ### CAMERA
